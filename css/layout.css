@@ -1,0 +1,95 @@
+/********** Container Section **********/
+div#container {
+    width: 960px; 
+    min-height: 900px;
+    margin: auto;
+}
+
+/********** Header Section **********/
+#container #head {
+    height: 90px;
+}
+#container #head #logo {
+    width: 65px;
+    height: 65px;
+    float: left; 
+    padding: 10px 10px;
+}
+#container #head #slogan h1 {
+    float: left;
+}
+#container #user {
+    float: right;
+}
+#container #user img {
+    width: 25px;
+    height: auto;
+    padding: 25px 15px;
+}
+
+/********** Nav Section **********/
+#container #nav{
+    background: #16161d;
+    width: 100%;
+    height: 35px;
+    text-align: center;
+}
+#container #nav ul{
+    display: inline-block;
+    margin: 10px auto;
+    overflow: hidden;
+}
+#container #nav ul li{
+    list-style: none;
+    float: left;
+}
+
+#container #nav ul li a {
+    border-right: 1px solid tomato;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+#container #nav ul li a:hover {
+    color: tomato;
+}
+
+/********** Article Section **********/
+#container #article1 {
+    overflow: hidden;
+}
+#container #article1 img {
+    float: right;
+}
+
+#container #article2 {
+    overflow: hidden;
+}
+#container #article2 img {
+    float: left;
+}
+
+/********** Footer Section **********/
+footer {
+    /* position: absolute;
+    bottom: 0; */
+    background: #16161d;
+    width: 960px;
+    margin-top: 20px;
+    padding: 7px;
+    text-align: center;
+}
+footer #copy {
+    color: white;
+}
+footer #flinks {
+    padding: 0 30px;
+}
+footer #flinks a{
+    text-decoration: none;
+    color: tomato;
+    padding: 0 5px;
+}
+footer #flinks a:hover {
+    color: white;
+}
