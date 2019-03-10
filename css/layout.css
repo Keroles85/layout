@@ -1,56 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
 /********** Container Section **********/
 div#container {
-    width: 960px; 
-    min-height: 900px;
+    width: 960px;
+    min-height: 1000;
     margin: auto;
 }
 
 /********** Header Section **********/
-#container #head {
-    height: 90px;
+#container header {
+    overflow: hidden;
 }
-#container #head #logo {
+#container header #logo {
     width: 65px;
     height: 65px;
     float: left; 
-    padding: 10px 10px;
+    padding: 15px 10px;
 }
-#container #head #slogan h1 {
+#container header #slogan h1 {
     float: left;
+    padding-top: 25px;
 }
-#container #user {
+#container header #user {
     float: right;
+    padding-right: 20px;
 }
-#container #user img {
+#container header #user img {
     width: 25px;
-    height: auto;
-    padding: 25px 15px;
+    padding: 30px 15px;
 }
 
 /********** Nav Section **********/
-#container #nav{
-    background: #16161d;
-    width: 100%;
-    height: 35px;
-    text-align: center;
-}
-#container #nav ul{
-    display: inline-block;
-    margin: 10px auto;
+#container nav ul{
+    background-color: #16161d;
     overflow: hidden;
-}
-#container #nav ul li{
     list-style: none;
+}
+#container nav ul li{
     float: left;
 }
-
-#container #nav ul li a {
-    border-right: 1px solid tomato;
-    padding: 15px;
+#container nav ul li{
+    border-right: 1px solid #fff;
+}
+#container nav ul li:last-child{
+    border-right: none;
+}
+#container nav ul li a {
     color: white;
     text-decoration: none;
+    display: block;
+    padding: 10px 10px;
+    border: 1px solid #16161d;
 }
-#container #nav ul li a:hover {
+#container nav ul li a:hover {
+    background-color: #fff;
     color: tomato;
 }
 
@@ -71,17 +76,16 @@ div#container {
 
 /********** Footer Section **********/
 footer {
-    /* position: absolute;
-    bottom: 0; */
     background: #16161d;
-    width: 960px;
-    margin-top: 20px;
-    padding: 7px;
     text-align: center;
+    padding: 10px;
 }
 footer #copy {
     color: white;
+    display: block;
+    padding: 5px;
 }
+
 footer #flinks {
     padding: 0 30px;
 }
