@@ -25,7 +25,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#">Gaming PCs</a>
+                    <a href="#">Gaming Desktops</a>
                     <ul>
                         <li><a href="#">Intel CPUS</a></li>
                         <li><a href="#">AMD CPUS</a></li>
@@ -40,16 +40,37 @@
                         <li><a href="#">MSI OPTIX</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Execlusive Offers</a></li>
-                <li><a href="#">Weeky offers</a></li>
+                <li>
+                    <a href="#">Execlusive Series</a>
+                    <ul>
+                        <li><a href="#">Pro Tier Series</a></li>
+                        <li><a href="#">Mid Tier Series</a></li>
+                        <li><a href="#">Ameture Tier Series</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">Special Deals</a></li>
             </ul>
         </nav>
     </section>
-    <article id="article1">
-        <div>
-            <img src="images/gaming.jpg">
-            <div style="padding: 100px 0; text-align: center">
+    <aside>
+        <div id="mainview">
+            <img src="images/slide1.jpg" id="galimg">
+            <a href="#" id="prev">&#10094</a>
+            <a href="#" id="next">&#10095</a>
+            <div id="galnav" style="text-align:center;">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <div id="gallery"><img src="images/slide2.jpg"><img src="images/slide3.jpg"><img src="images/slide4.jpg"></div>
+    </aside>
+    <article>
+        <div style="overflow: auto">
+            <div style="float: right">
+                <img src="images/gaming.jpg">
+            </div>
+            <div style="padding: 100px 0; text-align: center;">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> 
                 Ipsum, excepturi placeat voluptatum, voluptatibus odit doloribus officiis corrupti accusantium at odio nihil atque iste vel.<br> 
                 Ad velit veniam provident maiores dolor.<br>
@@ -65,8 +86,10 @@
             <a href="#">About</a>
             <a href="#">Contact</a>
             <a href="">Term of Services</a>
+            </div>
+        <div id="copy">
+            &copy; 2019 SHOPPING.COM ALL RIGHTS RESERVED.
         </div>
-        <div id="copy">&copy; 2019 SHOPPING.COM ALL RIGHTS RESERVED.</div>
     </footer>
 </div>
 </body>

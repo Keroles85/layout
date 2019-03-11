@@ -4,8 +4,8 @@
 }
 /********** Container Section **********/
 div#container {
+    position: relative;
     width: 960px;
-    min-height: 900px;
     margin: auto;
 }
 
@@ -43,6 +43,8 @@ div#container {
 }
 #container nav ul li{
     float: left;
+    width: 140px;
+    text-align: left;
 }
 
 #container nav ul li{
@@ -51,23 +53,27 @@ div#container {
 #container nav ul li:last-child{
     border-right: none;
 }
-/* Sub Navbar */
+
+/*** Sub Navbar ***/
+#container nav ul li ul li {
+    float: none;
+    display: block;
+    width: 195px;
+}
+#container nav ul li ul li {
+    border-right: none;
+    border-top: 1px solid white;
+}
 #container nav ul li ul {
     position: absolute;
     left: -999px;
 }
 #container nav ul li:hover ul {
     left: auto;
-}
-#container nav ul li ul li {
-    float: none;
-    display: block;
-}
-#container nav ul li ul li {
-    border-right: none;
-    border-top: 1px solid white;
+    z-index: 1;
 }
 /***************/
+
 #container nav ul li a {
     color: white;
     text-decoration: none;
@@ -80,41 +86,87 @@ div#container {
     color: tomato;
 }
 
-/********** Article Section **********/
-#container #article1 {
+/********** Aside Section **********/
+/* #container aside {
     overflow: hidden;
+} */
+#container aside #mainview {
+    position: relative;
+    max-width: 960px;
+    margin-top: 1px;
 }
-#container #article1 img {
-    float: right;
+#container aside #mainview #galimg {
+    width: 960px;
+    height: auto
 }
 
-#container #article2 {
-    overflow: hidden;
+#container aside #gallery img {
+    width: 320px;
+    border: 0;
+    margin: 0;
 }
-#container #article2 img {
-    float: left;
+
+/**** mainview nav button ****/
+#container aside #mainview #prev, #next {
+    position: absolute;
+    top : 50%;
+    padding: 10px;
+    margin-top: -20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 0 3px 3px 0;
 }
+#container aside #mainview #next {
+    right: 0px;
+    border-radius: 3px 0 0 3px;
+}
+#container aside #mainview #next:hover, #prev:hover{
+    background-color: black;
+}
+#container aside #galnav {
+    position: absolute;
+    left: 425px;
+    bottom: 7px;;
+}
+#container aside .dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #bbb;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 2px;
+    transition: background-color 0.6s ease;
+
+}
+#container aside .dot:hover {
+    background-color: #717171;
+}
+/****************************/
 
 /********** Footer Section **********/
 #container footer {
+    width: 100%;
     text-align: center;
-    margin-top: 200px;
+    background-color: #20262E;
+    /* position: absolute;
+    bottom: 0; */
 }
 #container footer #flinks {
-    background-color: rgb(190, 197, 204);
     padding: 5px 30px;
 }
 #container footer #flinks a{
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 0 5px;
 }
 #container footer #flinks a:hover {
-    color: white;
+    color: tomato;
 }
 #container footer #copy {
-    background-color: #20262E;
     color: white;
     display: block;
-    padding: 15px;
+    padding: 10px;
 }
