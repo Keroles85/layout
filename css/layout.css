@@ -1,11 +1,11 @@
 * {
-    margin: 0;
     padding: 0;
-  }
+    margin: 0;
+}
 /********** Container Section **********/
 div#container {
     width: 960px;
-    min-height: 1000;
+    min-height: 900px;
     margin: auto;
 }
 
@@ -33,26 +33,47 @@ div#container {
 }
 
 /********** Nav Section **********/
+/* #container nav {
+
+} */
 #container nav ul{
-    background-color: #16161d;
+    background-color: #20262E;
     overflow: hidden;
     list-style: none;
 }
 #container nav ul li{
     float: left;
 }
+
 #container nav ul li{
     border-right: 1px solid #fff;
 }
 #container nav ul li:last-child{
     border-right: none;
 }
+/* Sub Navbar */
+#container nav ul li ul {
+    position: absolute;
+    left: -999px;
+}
+#container nav ul li:hover ul {
+    left: auto;
+}
+#container nav ul li ul li {
+    float: none;
+    display: block;
+}
+#container nav ul li ul li {
+    border-right: none;
+    border-top: 1px solid white;
+}
+/***************/
 #container nav ul li a {
     color: white;
     text-decoration: none;
     display: block;
     padding: 10px 10px;
-    border: 1px solid #16161d;
+    border: 1px solid #20262E;
 }
 #container nav ul li a:hover {
     background-color: #fff;
@@ -75,25 +96,25 @@ div#container {
 }
 
 /********** Footer Section **********/
-footer {
-    background: #16161d;
+#container footer {
     text-align: center;
-    padding: 10px;
+    margin-top: 200px;
 }
-footer #copy {
-    color: white;
-    display: block;
-    padding: 5px;
+#container footer #flinks {
+    background-color: rgb(190, 197, 204);
+    padding: 5px 30px;
 }
-
-footer #flinks {
-    padding: 0 30px;
-}
-footer #flinks a{
+#container footer #flinks a{
     text-decoration: none;
-    color: tomato;
+    color: black;
     padding: 0 5px;
 }
-footer #flinks a:hover {
+#container footer #flinks a:hover {
     color: white;
+}
+#container footer #copy {
+    background-color: #20262E;
+    color: white;
+    display: block;
+    padding: 15px;
 }
