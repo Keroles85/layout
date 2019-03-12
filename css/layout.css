@@ -101,7 +101,7 @@ div#container {
 } */
 #container aside #mainview {
     position: relative;
-    max-width: 960px;
+    width: 960px;
     margin-top: 1px;
 }
 
@@ -116,7 +116,7 @@ div#container {
     margin: 0;
 }
 
-/**** mainview nav button ****/
+/**** mainview next and prev ****/
 #container aside #mainview #prev, #next {
     position: absolute;
     top : 50%;
@@ -140,8 +140,8 @@ div#container {
 
 #container aside #galnav {
     position: absolute;
-    left: 425px;
-    bottom: 7px;;
+    left: 450px;
+    bottom: 7px;
 }
 
 #container aside .dot {
