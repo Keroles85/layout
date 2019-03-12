@@ -13,20 +13,24 @@ div#container {
 #container header {
     overflow: hidden;
 }
+
 #container header #logo {
     width: 65px;
     height: 65px;
     float: left; 
     padding: 15px 10px;
 }
+
 #container header #slogan h1 {
     float: left;
     padding-top: 25px;
 }
+
 #container header #user {
     float: right;
     padding-right: 20px;
 }
+
 #container header #user img {
     width: 25px;
     padding: 30px 15px;
@@ -41,6 +45,7 @@ div#container {
     overflow: hidden;
     list-style: none;
 }
+
 #container nav ul li{
     float: left;
     width: 140px;
@@ -50,6 +55,7 @@ div#container {
 #container nav ul li{
     border-right: 1px solid #fff;
 }
+
 #container nav ul li:last-child{
     border-right: none;
 }
@@ -60,6 +66,7 @@ div#container {
     display: block;
     width: 195px;
 }
+
 #container nav ul li ul li {
     border-right: none;
     border-top: 1px solid white;
@@ -68,6 +75,7 @@ div#container {
     position: absolute;
     left: -999px;
 }
+
 #container nav ul li:hover ul {
     left: auto;
     z-index: 1;
@@ -81,6 +89,7 @@ div#container {
     padding: 10px 10px;
     border: 1px solid #20262E;
 }
+
 #container nav ul li a:hover {
     background-color: #fff;
     color: tomato;
@@ -95,6 +104,7 @@ div#container {
     max-width: 960px;
     margin-top: 1px;
 }
+
 #container aside #mainview #galimg {
     width: 960px;
     height: auto
@@ -118,18 +128,22 @@ div#container {
     font-weight: bold;
     border-radius: 0 3px 3px 0;
 }
+
 #container aside #mainview #next {
     right: 0px;
     border-radius: 3px 0 0 3px;
 }
+
 #container aside #mainview #next:hover, #prev:hover{
     background-color: black;
 }
+
 #container aside #galnav {
     position: absolute;
     left: 425px;
     bottom: 7px;;
 }
+
 #container aside .dot {
     width: 15px;
     height: 15px;
@@ -141,6 +155,7 @@ div#container {
     transition: background-color 0.6s ease;
 
 }
+
 #container aside .dot:hover {
     background-color: #717171;
 }
@@ -154,17 +169,21 @@ div#container {
     /* position: absolute;
     bottom: 0; */
 }
+
 #container footer #flinks {
     padding: 5px 30px;
 }
+
 #container footer #flinks a{
     text-decoration: none;
     color: white;
     padding: 0 5px;
 }
+
 #container footer #flinks a:hover {
     color: tomato;
 }
+
 #container footer #copy {
     color: white;
     display: block;
